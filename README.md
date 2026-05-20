@@ -2,9 +2,9 @@
 
 A simple terminal game where you go through a dungeon and fight enemies.
 
-## Version 1.0.0 Changelog
+## Version 1.0.1 Changelog
 
-- Initial Version of the Game Uploaded.
+- Fixed a bug where incorrect messages would appear if units are defeated and fled at the same time.
 
 ## Summary
 
