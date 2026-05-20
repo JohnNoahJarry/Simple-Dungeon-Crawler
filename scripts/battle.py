@@ -107,7 +107,11 @@ def main(system):
               break
         elif actionChoice == "2":
           system.playerParty[currentPlayer].status = "Fleeing"
-          system.playerParty[currentPlayer].target = random.choice(system.enemyParty)
+          while True:
+            system.playerParty[currentPlayer].target = random.choice(system.enemyParty)
+
+            if system.playerParty[currentPlayer].target.status not in ["Defeated", "Fled"]:
+              break
           currentPlayer += 1
         elif actionChoice == "b":
           currentPlayer = 0
@@ -122,14 +126,14 @@ def main(system):
     
     for x in range(len(system.allUnitsInBattle)):
       if system.allUnitsInBattle[x].status == "Defeated" or system.allUnitsInBattle[x].target.status == "Defeated" or system.allUnitsInBattle[x].status == "Fled" or system.allUnitsInBattle[x].target.status == "Fled":
-        if system.allUnitsInBattle[x].target.status == "Defeated" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled"]:
+        if system.allUnitsInBattle[x].target.status == "Defeated" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled", "Fleeing"]:
           ui.general.clearScreen()
           ui.general.displayHeader(system)
           ui.battle.displayEnemyStats(system)
           ui.general.displayPlayerPartyStats(system)      
           ui.battle.displayDefeatedAlready(system, x)
           ui.general.displayUserInputContinue()
-        elif system.allUnitsInBattle[x].target.status == "Fled" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled"]:
+        elif system.allUnitsInBattle[x].target.status == "Fled" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled", "Fleeing"]:
           ui.general.clearScreen()
           ui.general.displayHeader(system)
           ui.battle.displayEnemyStats(system)

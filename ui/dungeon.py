@@ -208,6 +208,10 @@ def displayShopRecruitsScreen(system):
     print(">> Your party is full.")
     print()
   
+  if len(system.shopRecruits) == 0:
+    print(">> There are no more recruits left.")
+    print()
+  
   for x in range(len(system.shopRecruits)):
     print("[{0}] {1:<18} LVL {2:<3} HP: {3:<3} ATK: {4:<3} DEF: {5:<3} SPD: {6:<3} Head: {7:<12} Hand: {8:<11} Body: {9:<11} Feet: {10:<11}".format(x+1, 
                                                                                                                                         system.shopRecruits[x].name, 

@@ -16,7 +16,7 @@ Each floor contains a Rest Area to heal your wounds, a Shop to spend your gold o
 
 At the top of the screen is a value called "Moves Left". It determines how long you have left to stay on a floor before the game forces you to the next floor.
 
-There are 4 main stats in the game that increase a unit levels up. HP is how much damage a unit can take before the unit becomes defeated. ATK is how much damage a unit does per attack. DEF is how much damage a unit randomly blocks as they get hit with an attack. SPD detemines who acts first in a battle. SPD also affects your Flee chance, the higher your SPD stat is compared to the enemies' SPD stats, the better your fleeing odds.
+There are 4 main stats in the game that increase a unit levels up. HP is how much damage a unit can take before the unit becomes defeated. ATK is how much damage a unit does per attack. DEF is how much damage a unit randomly blocks as they get hit with an attack. SPD determines who acts first in a battle. SPD also affects your Flee chance, the higher your SPD stat is compared to the enemies' SPD stats, the better your fleeing odds.
 
 There are 4 types of equipment in the game. Helmets increase a unit's HP by 20 per level. Swords increase a unit's ATK by 20 per level. Armor increases a unit's DEF by 20 per level. Boots increase a unit's SPD by 20 per level.
 
