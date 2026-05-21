@@ -4,7 +4,10 @@ A simple terminal game where you go through a dungeon and fight enemies.
 
 ## Version 1.0.1 Changelog
 
-- Fixed a bug where incorrect messages would appear if units are defeated and fled at the same time.
+- Fixed a bug where incorrect messages would appear if there are units that are defeated and fled at the same time.
+- Fixed a bug where a player unit that flees with defeated enemies present would have their turn skipped.
+
+* Added more variety to the names of enemies.
 
 ## Summary
 

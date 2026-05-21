@@ -126,14 +126,14 @@ def main(system):
     
     for x in range(len(system.allUnitsInBattle)):
       if system.allUnitsInBattle[x].status == "Defeated" or system.allUnitsInBattle[x].target.status == "Defeated" or system.allUnitsInBattle[x].status == "Fled" or system.allUnitsInBattle[x].target.status == "Fled":
-        if system.allUnitsInBattle[x].target.status == "Defeated" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled", "Fleeing"]:
+        if system.allUnitsInBattle[x].target.status == "Defeated" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled"]:
           ui.general.clearScreen()
           ui.general.displayHeader(system)
           ui.battle.displayEnemyStats(system)
           ui.general.displayPlayerPartyStats(system)      
           ui.battle.displayDefeatedAlready(system, x)
           ui.general.displayUserInputContinue()
-        elif system.allUnitsInBattle[x].target.status == "Fled" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled", "Fleeing"]:
+        elif system.allUnitsInBattle[x].target.status == "Fled" and system.allUnitsInBattle[x].status not in ["Defeated", "Fled"]:
           ui.general.clearScreen()
           ui.general.displayHeader(system)
           ui.battle.displayEnemyStats(system)
