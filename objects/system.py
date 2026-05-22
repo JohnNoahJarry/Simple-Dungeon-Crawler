@@ -209,7 +209,7 @@ class System:
     self.enemyParty = []
 
     for x in range(random.randint(1,3)):
-      name = "{0} {1}".format(random.choice(["Wood", "Fire", "Earth", "Metal", "Water", "Sun", "Moon", "Star"]), random.choice(["Apparition", "Construct", "Elemental", "Ghost", "Golem", "Guardian", "Phantom", "Specter"]))
+      name = "{0} {1}".format(random.choice(["Wood", "Fire", "Earth", "Metal", "Water", "Sun", "Moon", "Star", "Void", "Dungeon"]), random.choice(["Apparition", "Automaton", "Construct", "Elemental", "Ghost", "Golem", "Guardian", "Phantom", "Specter", "Spirit"]))
 
       level = random.randint(self.currentFloor*10-9,self.currentFloor*10)
 
